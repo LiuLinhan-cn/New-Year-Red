@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nyr:positive_fu"
+    }
+  ],
+  "result": {
+    "item": "nyr:opposite_fu"
+  },
+  "show_notification": true
+}

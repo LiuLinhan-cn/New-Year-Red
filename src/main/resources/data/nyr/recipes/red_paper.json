@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "ingredients",
+  "ingredients": [
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "nyr:red_paper"
+  },
+  "show_notification": true
+}

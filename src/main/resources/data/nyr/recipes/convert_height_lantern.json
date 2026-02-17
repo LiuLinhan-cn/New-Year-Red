@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nyr:wide_lantern"
+    }
+  ],
+  "result": {
+    "item": "nyr:height_lantern"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "R": {
+      "item": "nyr:red_paper"
+    },
+    "Y": {
+      "item": "nyr:yellow_paper"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " Y ",
+    "RSR",
+    " Y "
+  ],
+  "result": {
+    "item": "nyr:height_lantern"
+  },
+  "show_notification": true
+}

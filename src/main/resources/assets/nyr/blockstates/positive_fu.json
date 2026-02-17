@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nyr:block/positive_fu",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "nyr:block/positive_fu",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nyr:block/positive_fu",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "nyr:block/positive_fu"
+    }
+  }
+}
