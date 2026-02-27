@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -18,7 +19,7 @@ public class Modblocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, NYR.MOD_ID);
 
     public static final RegistryObject<Block> HEIGHT_LANTERN =
-            registerBlock("height_lantern", () -> new Block(BlockBehaviour.Properties.of()
+            registerBlock("height_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of()
                     .strength(0.5F,0.5F)
                     .lightLevel((state) -> 15)
                     .noOcclusion()
@@ -26,11 +27,12 @@ public class Modblocks {
                     .isValidSpawn((state, level, pos, entityType) -> false)
                     .isRedstoneConductor((state, level, pos) -> false)
                     .isSuffocating((state, level, pos) -> false)
-                    .isViewBlocking((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false),
+                    false
             ));
 
     public static final RegistryObject<Block> WIDE_LANTERN =
-            registerBlock("wide_lantern", () -> new Block(BlockBehaviour.Properties.of()
+            registerBlock("wide_lantern", () -> new LanternBlock(BlockBehaviour.Properties.of()
                     .strength(0.5F,0.5F)
                     .lightLevel((state) -> 15)
                     .noOcclusion()
@@ -38,14 +40,14 @@ public class Modblocks {
                     .isValidSpawn((state, level, pos, entityType) -> false)
                     .isRedstoneConductor((state, level, pos) -> false)
                     .isSuffocating((state, level, pos) -> false)
-                    .isViewBlocking((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false),
+                    true
             ));
 
     public static final RegistryObject<Block> POSITIVE_FU =
-        registerBlock("positive_fu", () -> new DirectionalBlock(BlockBehaviour.Properties.of()
+        registerBlock("positive_fu", () -> new FuBlock(BlockBehaviour.Properties.of()
                 .strength(0.5F,0.5F)
                 .noOcclusion()
-                .noCollission()
                 .dynamicShape()
                 .isValidSpawn((state, level, pos, entityType) -> false)
                 .isRedstoneConductor((state, level, pos) -> false)
@@ -54,10 +56,9 @@ public class Modblocks {
         ));
 
     public static final RegistryObject<Block> OPPOSITE_FU =
-            registerBlock("opposite_fu", () -> new DirectionalBlock(BlockBehaviour.Properties.of()
+            registerBlock("opposite_fu", () -> new FuBlock(BlockBehaviour.Properties.of()
                     .strength(0.5F,0.5F)
                     .noOcclusion()
-                    .noCollission()
                     .dynamicShape()
                     .isValidSpawn((state, level, pos, entityType) -> false)
                     .isRedstoneConductor((state, level, pos) -> false)

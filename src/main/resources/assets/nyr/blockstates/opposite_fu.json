@@ -1,19 +1,49 @@
 {
   "variants": {
-    "facing=east": {
+    "facing=east,left=0": {
       "model": "nyr:block/opposite_fu",
       "y": 270
     },
-    "facing=north": {
+    "facing=east,left=1": {
+      "model": "nyr:block/opposite_fu_left",
+      "y": 270
+    },
+    "facing=east,left=2": {
+      "model": "nyr:block/opposite_fu_right",
+      "y": 270
+    },
+    "facing=north,left=0": {
       "model": "nyr:block/opposite_fu",
       "y": 180
     },
-    "facing=west": {
+    "facing=north,left=1": {
+      "model": "nyr:block/opposite_fu_left",
+      "y": 180
+    },
+    "facing=north,left=2": {
+      "model": "nyr:block/opposite_fu_right",
+      "y": 180
+    },
+    "facing=west,left=0": {
       "model": "nyr:block/opposite_fu",
       "y": 90
     },
-    "facing=south": {
+    "facing=west,left=1": {
+      "model": "nyr:block/opposite_fu_left",
+      "y": 90
+    },
+    "facing=west,left=2": {
+      "model": "nyr:block/opposite_fu_right",
+      "y": 90
+    },
+    "facing=south,left=0": {
       "model": "nyr:block/opposite_fu"
+    },
+    "facing=south,left=1": {
+      "model": "nyr:block/opposite_fu_left"
+    },
+    "facing=south,left=2": {
+      "model": "nyr:block/opposite_fu_right"
     }
   }
 }
